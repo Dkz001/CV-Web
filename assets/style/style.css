@@ -1,0 +1,248 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    max-width: 955px;
+    height: 1300px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgb(196, 196, 196), -30px 0px 40px rgb(196, 196, 196);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section gauche */
+
+.section-left {
+    width: 45%;
+    height: 89%;
+    padding-top: 50px;
+    border-radius: 0 0 55px 0;
+    text-align: center;
+    color: white;
+    background-color: rgb(34, 61, 95);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.section-left:hover {
+    background-color: rgb(55, 97, 114);
+    transition: 0.5s;
+}
+
+.photo {
+    width: 210px;
+    height: 210px;
+    border-radius: 100%;
+    background-size: cover;
+    overflow: hidden;
+    background-color: white;
+}
+
+.contact {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.info {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+
+.line_left {
+    width: 60%;
+    height: 0.2px;
+    margin: 30px 0 30px 0;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+.about {
+    width: 80%;
+}
+
+
+/* Compétences & icones  */
+
+.skills {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.title_about,
+.title_skills {
+    margin-bottom: 40px;
+}
+
+.lang_fram {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0 10px 0 0px;
+    font-size: 0.9em;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-left: 40px;
+}
+
+.fram {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 1px;
+    margin-right: 25px;
+
+
+}
+.title_lang,
+.title_fram {
+    font-size: 1.1em;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.about_txt {
+    text-align: start;
+}
+
+.line_left2 {
+    width: 60%;
+    height: 0.2px;
+    margin: 30px 0 30px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+.logo
+{
+    width: 21px;
+    height: 21px;
+}
+
+.l {
+    margin: 0 0 0 10px;
+    float: right;
+}
+
+.r {
+    margin: 0 10px 0 2px;
+    float: left;    
+}
+
+.lr 
+{
+    margin: 0%;
+    float: left;
+}
+
+
+/* Section Droite */
+
+.section-right {
+    width: 48%;
+    margin: 2px;
+    padding-top: 50px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.name_position {
+    color: rgb(56, 56, 56);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name {
+    margin-top: 0%;
+    font-size: 2.9em;
+    margin-bottom: 20px;
+}
+
+.last_name {
+    margin: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.position {
+    margin-top: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.line_right {
+    width: 60%;
+    height: 2.6px;
+    background-color: rgb(56, 56, 56);
+}
+span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.techno {
+    color: rgb(23, 59, 156);
+}
+
+.link_p {
+    color: rgb(56, 56, 56);
+}
+
+.map {
+    width: 450px;
+    /* margin: auto; */
+    text-align: center;
+    border: 0.1px rgb(94, 94, 94);
+}
+
+
+/* Images icones / SVG  */
+
+.web {
+    filter: invert(93%) sepia(93%) saturate(34%) hue-rotate(248deg) brightness(107%) contrast(100%);
+}
+
+/* gestion responsive */
+
+@media (max-width: 826px) {
+    .photo {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        width: 97%;
+        height: auto;
+    }
+
+    .section-left {
+        width: 99%;
+    }
+
+    .section-right {
+        margin-left: 30px;
+    }
+
+}
